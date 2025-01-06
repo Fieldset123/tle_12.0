@@ -1,3 +1,6 @@
+//problem link:- https://www.hackerrank.com/contests/dcc-lab-30-jan/challenges/multiple-powers-of-two/problem
+
+
 #include <bits/stdc++.h>
 using namespace std;
 
