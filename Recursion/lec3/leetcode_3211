@@ -1,0 +1,22 @@
+class Solution {
+public:
+    void generate(string str,int n, vector<string>&ans){
+        if(str.length()==n){
+            ans.push_back(str);
+            return;
+        }
+        if(str==""||str[str.length()-1]=='1'){
+            generate(str+'1',n,ans);
+            generate(str+'0',n,ans);
+        }
+        else{
+            generate(str+'1',n,ans);
+        }
+    }
+    vector<string>validStrings(int n) {
+        vector<string>ans;
+        string str="";
+        generate(str,n,ans);
+        return ans;
+    }
+};
